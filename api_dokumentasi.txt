@@ -1,0 +1,30 @@
+1. palatecheck
+
+endpoint : http://127.0.0.1:5000/predict/palatecheck/{user_id}/{cafe_id}
+
+method : GET
+
+contoh penggunaan : http://127.0.0.1:5000/predict/palatecheck/478/ChIJ0aVF46v2aS4Rnh8lZ3d5tUQ
+
+2. Recommendation for user
+
+endpoint : http://127.0.0.1:5000/predict/recommendation
+
+method : POST
+
+Query Params :
+user_id = (berisi user_id)
+
+contoh penggunaan : http://127.0.0.1:5000/predict/recommendation?user_id=478
+
+3. Predicted Likelihood for User
+
+endpoint : http://127.0.0.1:5000/predict/likelihood
+
+method : POST
+
+Query Params :
+user_id = (berisi user_id)
+cafe_id = (berisi cafe_id)
+
+contoh penggunaan : http://127.0.0.1:5000/predict/likelihood?user_id=478&cafe_id=ChIJ0aVF46v2aS4Rnh8lZ3d5tUQ
